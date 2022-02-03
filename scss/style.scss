@@ -1,0 +1,68 @@
+@import './vars';
+@import './global';
+.wrapper{
+    background-image: url('../images/bg/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+.header{
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+    &__inner{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__menu-btn{
+        display: none;
+    }
+    
+}
+.menu{
+    right: 0;
+    margin: 0 auto;
+    &__list{
+        display: inline-block;
+    }
+    &__item{
+        padding: 9px 25px;
+        color: #212832;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        &:hover{
+            border: 1px solid #212832;
+            border-radius: 5px;
+            
+        }
+    }
+    &__btn{
+        padding-left: 30px;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/header-arrow.svg');
+            width: 10px;
+            height: 5.5px;
+            top: 10px;
+            right: -15px;
+        }
+
+    }
+    
+}
+
+
+
+@import './fonts';
+@import './libs';
+@import './media';
