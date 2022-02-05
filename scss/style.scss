@@ -155,12 +155,7 @@
         background-size: 153px 166px;
         text-align: center;
     }
-    &__subtitle{
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
+    
     &__title{
         margin-bottom: 67px;
     }
@@ -209,6 +204,82 @@
         }
     }
 }
+.destinations{
+    padding: 60px 0 80px;
+    &__inner{
+
+        background-image: url('../images/destinations-decore.png');
+        background-position: 98% 87%;
+        background-repeat: no-repeat;
+        background-size: 96px 252px;
+        text-align: center;
+    }
+    
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1060px;
+        margin: 0 auto;
+        z-index: 999;
+    }
+    &__item{ 
+        margin: 0 auto;
+        width: 314px;
+        height: 457px;
+        border: none;
+        border-radius: 24px;
+        box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__item-content{
+      
+        color: #5E6282;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: #fff;
+        padding: 0 20px;
+        
+
+
+    }
+    &__item-duration{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__item-img{
+        max-height: 340px;
+       
+    }
+    
+    &__item-top{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 15px;
+    }
+    &__item-bottom{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/Vector.svg');
+            width: 18.25px;
+            height: 18.25px;
+            top: 1px;
+            left: 0;
+        }
+    }
+
+}
+
+
 
 
 @import './fonts';

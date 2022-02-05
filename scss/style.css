@@ -108,6 +108,14 @@ body {
   color: #14183E;
 }
 
+.subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  color: #5E6282;
+  font-weight: 600;
+}
+
 .wrapper {
   background-image: url("../images/bg/top-bg.jpg");
   background-repeat: no-repeat;
@@ -293,13 +301,6 @@ body {
   text-align: center;
 }
 
-.services__subtitle {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
 .services__title {
   margin-bottom: 67px;
 }
@@ -359,5 +360,98 @@ body {
   height: 100px;
   bottom: -31px;
   left: -39px;
+}
+
+.destinations {
+  padding: 60px 0 80px;
+}
+
+.destinations__inner {
+  background-image: url("../images/destinations-decore.png");
+  background-position: 98% 87%;
+  background-repeat: no-repeat;
+  background-size: 96px 252px;
+  text-align: center;
+}
+
+.destinations__title {
+  margin-bottom: 60px;
+}
+
+.destinations__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1060px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.destinations__item {
+  margin: 0 auto;
+  width: 314px;
+  height: 457px;
+  border: none;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+.destinations__item-content {
+  color: #5E6282;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.destinations__item-duration {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.destinations__item-img {
+  max-height: 340px;
+}
+
+.destinations__item-top {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.destinations__item-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 30px;
+  position: relative;
+}
+
+.destinations__item-bottom::before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/icons/Vector.svg");
+  width: 18.25px;
+  height: 18.25px;
+  top: 1px;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
