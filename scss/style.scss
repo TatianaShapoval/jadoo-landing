@@ -68,6 +68,8 @@
 .top{
     &__inner{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-bottom: 40px;
     }
     &__content{
@@ -118,6 +120,7 @@
         border: none;
         border-radius: 10px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
 
     }
     &__btn-second{
@@ -125,6 +128,7 @@
         color: #686D77;
         border: none;
         background-color: transparent;
+        cursor: pointer;
         position: relative;
         &::before{
             content: '';
@@ -278,7 +282,183 @@
     }
 
 }
+.book{
+    &__inner{
+        background-image: url('../images/book-decor.png');
+        background-position: top right;
+        background-size: 354px 367px;
+        background-repeat: no-repeat;
+        padding: 100px 0 100px 76px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__info{
+        max-width: 511px;
+    }
+    &__content{
+        max-width: 395px;
+    }
+    &__item{
+        margin-bottom: 48px;
+        padding-left: 70px;
+        color: $default;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/book.png');
+            width: 47px;
+            height: 48px;
+            top: 7;
+            left: 0;
+        }
 
+    }
+    &__item-payment{
+        &::before{
+            
+            background-image: url('../images/payment.png');
+            
+        }
+    }
+    &__item-reach{
+        &::before{
+            
+            background-image: url('../images/reach.png');
+            
+        }
+    }
+    &__item-title{
+        font-weight: 700;
+        
+    }
+    &__item-text{
+        font-weight: 400;
+    }
+    &__widget{
+       padding-top: 15px;
+       max-width: 485px;
+       max-height: 459px;
+       display: flex;
+       margin: 0 auto;
+       position: relative;
+       
+    }
+    &__box{
+        background-color: #fff;
+       
+        padding: 20px 25px 30px 25px;
+        border: none;
+        border-radius: 26px;
+        color: #84829A;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 30px;
+        
+        
+    }
+    &__box-first{
+        width: 370px;
+        height: 400px;
+        &:hover{
+            z-index: 999;
+            
+        }
+    }
+    &__box-img{
+        margin-bottom: 20px;
+    }
+    &__box-title{
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #080809;
+    }
+    &__box-text{
+        margin-bottom: 21px;
+    }
+    &__box-buttons{
+        margin-bottom: 20px;
+    }
+    &__box-btn{
+        padding-right: 13px;
+        cursor: pointer;
+    }
+    &__box-people{
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/building.svg');
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            left: 0;
+        }
+    }
+    &__box-second{
+        content: '';
+        width: 263px;
+        height: 129px;
+        position: absolute;
+        
+        bottom: 46px;
+        left: 230px;
+    }
+    &__box-subtitle{
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 61px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/rome-icon.png');
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__box-title{
+        padding-left: 61px;
+    }
+    &__box-percent{
+        padding-left: 61px;
+      
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #080809;
+        span{
+            color: #8A79DF;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #F5F5F5;
+            height: 5px;
+            border-radius: 30px;
+            bottom: 25px;
+            left: 84px;
+            width: 156px;
+        }
+        
+    }
+    &__box-line{
+            height: 5px;
+            background-color: #8A79DF  ;
+            border-radius: 30px;
+            position: relative;
+            width: 156px; 
+    }
+}
+.line{
+    width: 156px;
+    margin-left: 61px;
+}
 
 
 

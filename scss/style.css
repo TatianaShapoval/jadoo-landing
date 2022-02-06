@@ -202,6 +202,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 40px;
 }
 
@@ -262,6 +268,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .top__btn-second {
@@ -269,6 +276,7 @@ body {
   color: #686D77;
   border: none;
   background-color: transparent;
+  cursor: pointer;
   position: relative;
 }
 
@@ -453,5 +461,199 @@ body {
   height: 18.25px;
   top: 1px;
   left: 0;
+}
+
+.book__inner {
+  background-image: url("../images/book-decor.png");
+  background-position: top right;
+  background-size: 354px 367px;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.book__info {
+  max-width: 511px;
+}
+
+.book__content {
+  max-width: 395px;
+}
+
+.book__item {
+  margin-bottom: 48px;
+  padding-left: 70px;
+  color: #5E6282;
+  position: relative;
+}
+
+.book__item::before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/book.png");
+  width: 47px;
+  height: 48px;
+  top: 7;
+  left: 0;
+}
+
+.book__item-payment::before {
+  background-image: url("../images/payment.png");
+}
+
+.book__item-reach::before {
+  background-image: url("../images/reach.png");
+}
+
+.book__item-title {
+  font-weight: 700;
+}
+
+.book__item-text {
+  font-weight: 400;
+}
+
+.book__widget {
+  padding-top: 15px;
+  max-width: 485px;
+  max-height: 459px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+.book__box {
+  background-color: #fff;
+  padding: 20px 25px 30px 25px;
+  border: none;
+  border-radius: 26px;
+  color: #84829A;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.book__box-first {
+  width: 370px;
+  height: 400px;
+}
+
+.book__box-first:hover {
+  z-index: 999;
+}
+
+.book__box-img {
+  margin-bottom: 20px;
+}
+
+.book__box-title {
+  margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #080809;
+}
+
+.book__box-text {
+  margin-bottom: 21px;
+}
+
+.book__box-buttons {
+  margin-bottom: 20px;
+}
+
+.book__box-btn {
+  padding-right: 13px;
+  cursor: pointer;
+}
+
+.book__box-people {
+  padding-left: 30px;
+  position: relative;
+}
+
+.book__box-people::before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/icons/building.svg");
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 0;
+}
+
+.book__box-second {
+  content: '';
+  width: 263px;
+  height: 129px;
+  position: absolute;
+  bottom: 46px;
+  left: 230px;
+}
+
+.book__box-subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 61px;
+  position: relative;
+}
+
+.book__box-subtitle::before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/rome-icon.png");
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.book__box-title {
+  padding-left: 61px;
+}
+
+.book__box-percent {
+  padding-left: 61px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #080809;
+}
+
+.book__box-percent span {
+  color: #8A79DF;
+}
+
+.book__box-percent::before {
+  content: '';
+  position: absolute;
+  background-color: #F5F5F5;
+  height: 5px;
+  border-radius: 30px;
+  bottom: 25px;
+  left: 84px;
+  width: 156px;
+}
+
+.book__box-line {
+  height: 5px;
+  background-color: #8A79DF;
+  border-radius: 30px;
+  position: relative;
+  width: 156px;
+}
+
+.line {
+  width: 156px;
+  margin-left: 61px;
 }
 /*# sourceMappingURL=style.css.map */
