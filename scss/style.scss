@@ -13,7 +13,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 130px;
+        padding: 30px 0px;
     }
     &__inner{
         display: flex;
@@ -647,6 +647,7 @@
         margin-bottom: 74px;
     }
     &__form{
+        max-width: 775px;
         margin-bottom: 78px;
         position: relative;
         &::before{
@@ -662,9 +663,10 @@
         }
     }
     &__form-input{
-        padding: 25px 170px 25px 66px;
+        padding: 25px 0 25px 66px;
         border: none;
         border-radius: 10px;
+        width: 550px;
         
         &::placeholder{
             font-size: 14px;
@@ -681,7 +683,86 @@
         cursor: pointer;
     }
 } 
+.footer{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 80px 50px 80px;
+    }
+    &__logo-content{
+        max-width: 207px;
+    }
+    &__logo{
+        font-size: 44px;
+        line-height: 66px;
+        color: #181E4B;
+        margin-bottom: 20px;
+    }
+    &__logo-text{
+        font-size: 13px;
+        line-height: 16px;
+        color: $default;
+    }
+    &__copyright{
+        
+        padding: 80px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: $default;
 
+    }
+    &__content-title{
+        margin-top: 24px;
+        font-size: 21px;
+        line-height: 26px;
+        color: #080809;
+        margin-bottom: 34px;
+    }
+    &__content-item{
+        font-size: 18px;
+        line-height: 22px;
+        color: $default;
+        margin-bottom: 14px;
+    }
+   
+
+    &__social{
+        margin-top: 24px;
+        
+    }
+    &__social-btn{
+        margin-right: 25px;
+        margin-bottom: 26px;
+        width: 41px;
+        height: 41px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        border: none;
+        background-color: #fff;
+        img{
+            margin: -2px auto;
+        }
+    }
+    &__social-instagram{
+        background-image: url('../images/icons/instagram-bg.png');
+        background-position: center;
+        
+
+    }
+    &__social-text{
+        font-size: 20px;
+        line-height: 24px;
+        color: $default;
+        margin-bottom: 16px;
+    }
+    &__app-btn{
+        cursor: pointer;
+        padding-right: 7px;
+    }
+
+}
 
 @import './fonts';
 @import './libs';
