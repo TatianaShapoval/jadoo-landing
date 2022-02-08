@@ -1,7 +1,13 @@
 
 // @media (max-width: 1366px){
     
-// }
+@media (max-width: 1440px){
+    .subscribe{
+        &__content{
+            padding: 60px 120px 30px 120px;
+        }
+    }
+}
 @media (max-width: 1345px){
     .services{
         &__item {
@@ -38,9 +44,31 @@
     }
     .partners{
         &__inner {
-            padding: 0px 0 30px 0px;
+            padding: 0px 0 90px 0px;
         }
     }
+    .subscribe{
+        &__content{
+            padding: 60px 40px 30px 40px;
+        }
+        &__form-btn{
+            padding: 25px 35px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 47px;
+        }   
+        &__form-input{
+            padding: 25px 120px 25px 66px;
+        }
+    
+    }
+    .footer{
+        &__inner{
+            padding: 30px 0px 50px 0px;
+        }
+    }
+    
 }
 @media (max-width: 1184px){
     .container{
@@ -70,6 +98,25 @@
         }
         &__widget{
             margin: 0 auto;
+        }
+    }
+    .footer{
+        
+        &__logo{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__logo-content {
+            max-width: 150px;
+        }
+        &__content-title {
+            
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__content-item {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }
@@ -248,6 +295,41 @@
     .destinations{
         padding: 30px 0 30px;
     }
+    .subscribe{
+        &__content{
+            padding: 60px 20px 30px 20px;
+        }
+        &_form{
+            max-width: 555px;
+        }
+        &__form-input {
+            padding: 20px 0px 20px 60px;
+            font-size: 14px;
+        }
+        &__form-btn{
+            padding: 20px 30px;
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 40px;
+        }    
+    
+    }
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo-content{
+            margin-right: 60px;
+        }
+
+        &__content{
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+    }
     
 }
  
@@ -326,10 +408,61 @@
     .slick-next{
         right: 95px;
     }
-
-
-}     
+    .subscribe{
+        &__inner{
+            padding-right: 0;
+            margin-bottom: 0px;
+            background-image: none;
+            &::before{
+                background-image: none;
+            }
+        }
+        &__form-input{
+            margin-bottom: 30px;
+            max-width: 302px;
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 50px;
+        }
+    }
     
+    
+}     
+@media (max-width: 634px){
+    .footer{
+        &__inner{
+            display: block;
+            text-align: center;
+            padding: 0;
+        }
+        &__content{
+            margin-bottom: 40px;
+        }
+        &__logo{
+            font-size: 42px;
+            line-height: 48px;
+        }
+        &__logo-content {
+            max-width: 300px;
+            margin-right: 0;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        &__content-title {
+            margin-top: 0;
+            font-size: 19px;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+        &__content-item {
+            font-size: 17px;
+            line-height: 19px;
+        }
+    }
+}   
+
 
 @media (max-width: 585px){
     .top{
@@ -501,6 +634,20 @@
     .slick-next{
         right: 35px;
     }
+    .subscribe{
+        &__form{
+            margin-bottom: 30px;
+        }
+        &__form-input{
+            margin-bottom: 30px;
+            max-width: 252px;
+        }
+        &__title{
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 @media (max-width: 400px){
@@ -523,6 +670,18 @@
             margin-bottom: 15px;
             font-size: 38px;
             line-height: 50px;
+        }
+    }
+    .subscribe{
+        
+        &__form-input{
+           
+            max-width: 222px;
+        }
+        &__title{
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 30px;
         }
     }
     

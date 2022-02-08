@@ -650,25 +650,18 @@
     &__form{
         max-width: 775px;
         margin-bottom: 78px;
-        position: relative;
-        &::before{
-            content: '';
-            position: absolute;
-            background-image: url('../images/icons/subscribe-letter.svg');
-            top: 28px;
-            left: 44px;
-            width: 21px;
-            height: 18px;
-            z-index: 999;
-           
-        }
+        
+        
     }
     &__form-input{
-        padding: 25px 0 25px 66px;
+        padding: 25px 160px 25px 66px;
         border: none;
         border-radius: 10px;
-        width: 550px;
-        
+        max-width: 550px;
+        background-image: url('../images/icons/subscribe-letter.svg');
+        background-repeat: no-repeat;
+        background-position: 22px;
+
         &::placeholder{
             font-size: 14px;
             line-height: 174px;
