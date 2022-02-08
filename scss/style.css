@@ -317,6 +317,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -472,11 +474,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
 }
 
@@ -685,7 +682,7 @@ body {
 }
 
 .testimonials__slider-item {
-  width: 669px;
+  max-width: 669px;
   height: 356px;
   padding: 33px;
 }
@@ -803,12 +800,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.partners__item {
+  padding: 0 20px;
 }
 
 .partners__item img {
@@ -1009,6 +1012,41 @@ body {
   padding-right: 7px;
 }
 
+@media (max-width: 1345px) {
+  .services__item {
+    max-width: 214px;
+    max-height: 260px;
+  }
+  .services__item-title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+  .services__item-text {
+    font-size: 12px;
+  }
+  .destinations {
+    padding: 40px 0 60px;
+  }
+  .destinations__inner {
+    background-image: none;
+  }
+  .destinations__item {
+    width: 287px;
+    height: 420px;
+  }
+  .testimonials__inner {
+    display: inline-block;
+    padding: 28px 0 40px 0px;
+  }
+  .testimonials__info {
+    max-width: 100%;
+  }
+  .partners__inner {
+    padding: 0px 0 30px 0px;
+  }
+}
+
 @media (max-width: 1184px) {
   .container {
     padding: 0 60px;
@@ -1016,9 +1054,27 @@ body {
   .header__content {
     padding: 25px 0px;
   }
+  .book__inner {
+    display: block;
+    padding: 30px 0 30px 20px;
+  }
+  .book__info {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+  .book__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .book__widget {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
   .menu__item {
     padding: 9px 18px;
   }
@@ -1033,6 +1089,36 @@ body {
   }
   .top__text {
     font-size: 14px;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .services__title {
+    margin-bottom: 45px;
+  }
+  .services__item {
+    padding: 14px 25px 20px 25px;
+    max-width: 204px;
+    max-height: 208px;
+  }
+  .services__item-title {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 10px;
+  }
+  .services__item-text {
+    font-size: 10px;
+  }
+  .destinations__items {
+    max-width: 100%;
+  }
+  .destinations__item {
+    width: 220px;
+    height: 343px;
+  }
+  .destinations__title {
+    font-size: 38px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1123,6 +1209,28 @@ body {
     left: 60px;
     top: 55px;
   }
+  .services {
+    padding: 40px 0 45px;
+  }
+  .services__inner {
+    background-image: none;
+  }
+  .services__title {
+    margin-bottom: 30px;
+  }
+  .services__items {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .services__item {
+    max-width: 100%;
+  }
+  .services__item-image {
+    margin-bottom: 15px;
+  }
+  .destinations {
+    padding: 30px 0 30px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -1142,6 +1250,56 @@ body {
     font-size: 48px;
     margin-bottom: 20px;
   }
+  .destinations__items {
+    display: inline-block;
+  }
+  .destinations__item {
+    width: 314px;
+    height: 457px;
+    margin-bottom: 20px;
+  }
+  .testimonials__subtitle {
+    font-size: 15px;
+  }
+  .testimonials__title {
+    font-size: 34px;
+  }
+  .testimonials__title {
+    font-size: 30px;
+  }
+  .testimonials__slider {
+    padding-left: 0;
+    width: 500px;
+  }
+  .testimonials__slider-item {
+    font-size: 13px;
+  }
+  .testimonials__slider-text {
+    font-size: 12px;
+    line-height: 23px;
+    margin-bottom: 28px;
+  }
+  .testimonials__slider-name {
+    font-size: 15px;
+  }
+  .testimonials__slider-item {
+    font-size: 13px;
+  }
+  .testimonials__slider-firstitem {
+    width: 400px;
+  }
+  .testimonials__slider-seconditem {
+    width: 400px;
+  }
+  .testimonials__slider-thirditem {
+    width: 400px;
+  }
+  .slick-prev {
+    right: 95px;
+  }
+  .slick-next {
+    right: 95px;
+  }
 }
 
 @media (max-width: 585px) {
@@ -1160,6 +1318,60 @@ body {
   }
   .top__buttons {
     font-size: 12px;
+  }
+  .book__inner {
+    background-image: none;
+  }
+  .book__box-second {
+    display: none;
+  }
+  .book__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 25px;
+  }
+  .book__item {
+    margin-bottom: 34px;
+  }
+  .book__item-text {
+    font-size: 13px;
+  }
+  .book__box-title {
+    padding-left: 35px;
+  }
+  .book__box-text {
+    font-size: 13px;
+  }
+  .book__box-people {
+    font-size: 13px;
+  }
+  .testimonials__subtitle {
+    font-size: 15px;
+  }
+  .testimonials__title {
+    font-size: 34px;
+  }
+  .testimonials__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .testimonials__slider {
+    width: 380px;
+  }
+  .testimonials__slider-firstitem {
+    width: 280px;
+  }
+  .testimonials__slider-seconditem {
+    width: 280px;
+  }
+  .testimonials__slider-thirditem {
+    width: 280px;
+  }
+  .slick-prev {
+    right: 110px;
+  }
+  .slick-next {
+    right: 110px;
   }
 }
 
@@ -1190,6 +1402,50 @@ body {
     margin-right: 20px;
     padding: 14px 20px;
   }
+  .destinations__item {
+    width: 248px;
+    height: 368px;
+  }
+  .destinations__title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  .book__title {
+    font-size: 24px;
+  }
+  .book__box-first {
+    height: 360px;
+  }
+  .testimonials__subtitle {
+    font-size: 13px;
+  }
+  .testimonials__title {
+    font-size: 20px;
+  }
+  .testimonials__slider {
+    width: 260px;
+  }
+  .testimonials__slider-text {
+    margin-bottom: 15px;
+  }
+  .testimonials__slider-firstitem {
+    width: 230px;
+    height: 300px;
+  }
+  .testimonials__slider-seconditem {
+    width: 230px;
+    height: 300px;
+  }
+  .testimonials__slider-thirditem {
+    width: 230px;
+    height: 300px;
+  }
+  .slick-prev {
+    right: 35px;
+  }
+  .slick-next {
+    right: 35px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1203,6 +1459,11 @@ body {
     margin-right: 44px;
     padding: 14px 20px;
     margin-right: 20px;
+  }
+  .services__title {
+    margin-bottom: 15px;
+    font-size: 38px;
+    line-height: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -165,6 +165,7 @@
     }
     &__items{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -290,8 +291,6 @@
         background-repeat: no-repeat;
         padding: 100px 0 100px 76px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
         margin: 0 auto;
     }
     &__info{
@@ -479,7 +478,7 @@
         padding-left: 50px;
     }
     &__slider-item{
-        width: 669px;
+        max-width: 669px;
         height: 356px;
         padding: 33px;
     }
@@ -588,11 +587,13 @@
     &__inner{
         padding: 0 0 100px 76px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
        
     }
     &__item{
+        padding: 0 20px;
         img{
             filter: grayscale(1);
             transition: 0.3s;

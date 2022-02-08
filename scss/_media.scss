@@ -2,7 +2,46 @@
 // @media (max-width: 1366px){
     
 // }
-
+@media (max-width: 1345px){
+    .services{
+        &__item {
+            max-width: 214px;
+            max-height: 260px;
+        }
+        &__item-title {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 14px;
+        }
+        &__item-text{
+            font-size: 12px;
+        }
+    }
+    .destinations{
+        padding: 40px 0 60px;
+        &__inner{
+            background-image: none;
+        }
+        &__item{
+            width: 287px;
+            height: 420px;
+        }
+    }
+    .testimonials{
+        &__inner{
+            display: inline-block;
+            padding: 28px 0 40px 0px;
+        }
+        &__info{
+            max-width: 100%;
+        }
+    }
+    .partners{
+        &__inner {
+            padding: 0px 0 30px 0px;
+        }
+    }
+}
 @media (max-width: 1184px){
     .container{
         padding: 0 60px;
@@ -12,10 +51,33 @@
             padding: 25px 0px;
         }
     }
+    .book{
+        &__inner{
+            display: block;
+            
+            
+            padding: 30px 0 30px 20px;
+        }
+        &__info{
+            
+            
+            margin: 0 auto;
+            max-width: 440px;
+        }
+        &__title{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__widget{
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 1024px){
-    
+    .container{
+        padding: 0 40px;
+    }
     .menu{
         
         &__item{
@@ -36,6 +98,41 @@
             font-size: 14px;
         }
     }
+    .title{
+        font-size: 45px;
+    }
+    .services{
+        &__title{
+            margin-bottom: 45px;
+        }
+        &__item {
+            padding: 14px 25px 20px 25px;
+            max-width: 204px;
+            max-height: 208px;
+        }
+        &__item-title {
+            font-size: 10px;
+            line-height: 13px;
+            margin-bottom: 10px;
+        }
+        &__item-text{
+            font-size: 10px;
+        }
+    }
+    .destinations{
+        &__items{
+            max-width: 100%;
+        }
+        &__item{
+            width: 220px;
+            height: 343px;
+        }
+        &__title{
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+    }
+
 }
 @media (max-width: 940px){
     .header{
@@ -129,6 +226,29 @@
         }
         
     }
+    .services{
+        padding: 40px 0 45px;
+        &__inner{
+            background-image: none;
+        }
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__items{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        &__item{
+            max-width: 100%;
+        }
+        &__item-image{
+            margin-bottom: 15px;
+        }
+    }
+    .destinations{
+        padding: 30px 0 30px;
+    }
+    
 }
  
 @media (max-width: 790px){
@@ -148,7 +268,69 @@
             margin-bottom: 20px;
         }
     }
-}
+    .destinations{
+        &__items{
+            display: inline-block;
+        }
+        &__item{ 
+            width: 314px;
+            height: 457px;
+            margin-bottom: 20px;
+        }
+    }
+    .testimonials{
+        &__subtitle{
+            font-size: 15px;
+        }
+        &__title{
+            font-size: 34px;
+        }
+        
+        
+        &__title{
+            font-size: 30px;
+        }
+ 
+        &__slider{
+            padding-left: 0;
+            width: 500px;
+        }
+        &__slider-item{
+            font-size: 13px;
+        }
+        &__slider-text {
+            font-size: 12px;
+            line-height: 23px;
+            margin-bottom: 28px;
+        }
+        &__slider-name{
+            font-size: 15px;
+        }
+        &__slider-item{
+            font-size: 13px;
+        }
+        &__slider-firstitem{
+            
+            width: 400px;
+        }
+        &__slider-seconditem{
+            width: 400px;
+        }
+        &__slider-thirditem{
+            width: 400px;
+        }
+    }
+    .slick-prev{
+        right: 95px;
+     }
+    .slick-next{
+        right: 95px;
+    }
+
+
+}     
+    
+
 @media (max-width: 585px){
     .top{
         &__title{
@@ -168,6 +350,71 @@
             font-size: 12px;
         }
     }
+    .book{
+        &__inner{
+            background-image: none;
+        }
+        &__box-second{
+            display: none;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 34px;
+            margin-bottom: 25px;
+        }
+        &__item{
+            margin-bottom: 34px;
+            
+        }
+        &__item-text{
+            font-size: 13px;
+        }
+        &__box-title{
+            padding-left: 35px;
+        }
+        &__box-text{
+            font-size: 13px;
+        }
+        &__box-people{
+            font-size: 13px;
+        }
+    }
+    .testimonials{
+        &__subtitle{
+            font-size: 15px;
+        }
+        &__title{
+            font-size: 34px;
+        }
+        
+        
+        &__title{
+            font-size: 25px;
+            line-height: 30px;
+        }
+ 
+        &__slider{   
+            width: 380px;
+        }
+        
+        &__slider-firstitem{
+            
+            width: 280px;
+        }
+        &__slider-seconditem{
+            width: 280px;
+        }
+        &__slider-thirditem{
+            width: 280px;
+        }
+    }
+    .slick-prev{
+        right: 110px;
+     }
+    .slick-next{
+        right: 110px;
+    }
+
 }
 @media (max-width: 486px){
     .container{
@@ -201,6 +448,59 @@
         
         }
     }
+    .destinations{
+        &__item{
+            width: 248px;
+            height: 368px;
+        }
+        &__title{
+            font-size: 34px;
+            line-height: 34px;
+        
+        }
+    }
+    .book{
+        &__title{
+            font-size: 24px;
+        }
+        &__box-first{
+            height: 360px;
+        }
+    }
+    .testimonials{
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__slider{   
+            width: 260px;
+        }
+        &__slider-text{
+            margin-bottom: 15px;
+        }
+        
+        &__slider-firstitem{
+            
+            width: 230px;
+            height: 300px;
+        }
+        &__slider-seconditem{
+            width: 230px;
+            height: 300px;
+        }
+        &__slider-thirditem{
+            width: 230px;
+            height: 300px;
+        }
+    }
+    .slick-prev{
+        right: 35px;
+     }
+    .slick-next{
+        right: 35px;
+    }
 }
 
 @media (max-width: 400px){
@@ -218,6 +518,12 @@
         
         }
     }
-    
+    .services{
+        &__title{
+            margin-bottom: 15px;
+            font-size: 38px;
+            line-height: 50px;
+        }
+    }
     
 }
